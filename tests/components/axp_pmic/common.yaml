@@ -1,0 +1,8 @@
+axp_pmic:
+  id: axp2101_1
+
+sensor:
+  - platform: axp_pmic
+    axp2101_id: axp2101_1
+    battery_voltage:
+      name: "Battery Voltage"
