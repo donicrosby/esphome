@@ -7,7 +7,7 @@
 namespace esphome {
 namespace axp_pmic {
 
-class AXP2101 : public AxpPmic, public sensor::Sensor, public PollingComponent {
+class AXP2101 : public AxpPmic {
  public:
   void set_dcdc1_voltage(uint16_t voltage) { dcdc1_voltage_ = voltage; }
   void set_dcdc2_voltage(uint16_t voltage) { dcdc2_voltage_ = voltage; }
