@@ -10,7 +10,7 @@ from esphome.const import (
 
 from . import CONF_AXP2101_ID, Axp2101
 
-DEPENDENCIES = ["axp_pmic"]
+DEPENDENCIES = ["axp_pmu"]
 
 CONF_BATT_VOLTAGE = "battery_voltage"
 

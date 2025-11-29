@@ -8,9 +8,9 @@ DEPENDENCIES = ["i2c"]
 CONF_AXP2101_ID = "axp2101_id"
 
 
-axp_pmic_ns = cg.esphome_ns.namespace("axp_pmic")
-AxpPmic = axp_pmic_ns.class_("AxpPmic", i2c.I2CDevice)
-Axp2101 = axp_pmic_ns.class_("AXP2101", AxpPmic, cg.PollingComponent)
+axp_pmu_ns = cg.esphome_ns.namespace("axp_pmu")
+AxpPMU = axp_pmu_ns.class_("AxpPMU", i2c.I2CDevice)
+Axp2101 = axp_pmu_ns.class_("AXP2101", AxpPMU, cg.PollingComponent)
 
 CONF_BATT_VOLTAGE = "battery_voltage"
 
