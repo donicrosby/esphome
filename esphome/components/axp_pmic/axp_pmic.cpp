@@ -6,7 +6,7 @@ namespace axp_pmic {
 
 static const char *TAG = "axp_pmic";
 
-bool AxpPmic::init_pmu() {
+bool AxpPmic::setup_pmu() {
   ESP_LOGD(TAG, "Setting up PMU");
   if (global_pmu == nullptr) {
     global_pmu = this;
