@@ -7,11 +7,11 @@ namespace axp_pmu {
 static const char *TAG = "axp_pmu";
 
 bool AxpPMU::setup_pmu() {
-  ESP_LOGD(TAG, "Setting up PMU");
+  ESP_LOGD(TAG, "PMU init");
   if (global_pmu == nullptr) {
     global_pmu = this;
   } else {
-    ESP_LOGE(TAG, "Only one AXP PMU instance is supported");
+    ESP_LOGE(TAG, "Only one PMU is allowed");
     return false;
   }
 
